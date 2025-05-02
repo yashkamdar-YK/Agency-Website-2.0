@@ -11,8 +11,8 @@ const navLinks = [
 
 const Navbar = () => {
     return (
-        <nav className="w-full px-6 py-3 bg-white">
-            <div className="max-w-11/12 mx-auto flex items-center justify-between">
+        <nav className="w-full px-6 lg:px-13 py-3 bg-white">
+            <div className=" flex items-center justify-between">
                 {/* Left Side */}
                 <div className="flex items-center space-x-4">
                     <motion.a
@@ -23,7 +23,7 @@ const Navbar = () => {
                         transition={{ duration: 0.6, ease: 'easeOut' }}
                         whileHover={{ rotate: [1, 3, -3, 0.5, 1], scale: 1.05 }}
                     >
-                        APEX LAB
+                        APEX LABS
                     </motion.a>
                 </div>
 
