@@ -1,3 +1,46 @@
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Mono.ttf') format('truetype');
+  font-weight: 400;
+  font-style: monospace;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -112,11 +155,15 @@
   --sidebar-ring: oklch(0.552 0.016 285.938);
 }
 
+
+
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Suisse Intl', sans-serif;
+  }
+
+  * {
+    @apply border-border outline-ring/50;
   }
 }
