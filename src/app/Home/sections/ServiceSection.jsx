@@ -4,7 +4,7 @@ import React from "react";
 
 export default function ServicesSection() {
   return (
-    <section className="w-full px-4 lg:px-13">
+    <section className="w-full lg:h-screen px-4 lg:px-13">
       <div className="">
         <div className="flex items-center justify-between text-xl font-bold">
           <h1 className="underline">SERVICE</h1>

@@ -4,7 +4,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="w-full px-4 lg:px-13">
+    <section className="w-full lg:h-screen px-4 lg:px-13">
       <h1 className="text-[15vw] py-12.5 text-center leading-[0.85] font-black tracking-tight">
         APEX LABS
       </h1>
