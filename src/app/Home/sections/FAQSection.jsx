@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { ChevronDown, ChevronUp, MessageSquare } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function FAQSection() {
   const [faqs, setFaqs] = useState([
@@ -56,35 +55,19 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full lg:h-screen py-16 px-4 lg:px-13">
-      <div className="mb-2">
-        <span className="text-sm font-medium flex items-center gap-2">
-          <span className="inline-block w-4 h-0.5 bg-black"></span> FAQ
-        </span>
-      </div>
-
-      <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
-        <h2 className="text-3xl sm:text-4xl mb-4 md:mb-0">
-          Frequently Asked Questions
-        </h2>
-
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
-          <p className="text-sm">Still have a question in mind?</p>
-          <Button
-            variant="default"
-            className="bg-black text-white rounded-full px-4 py-2 h-auto flex items-center gap-2"
-          >
-            <MessageSquare size={16} />
-            Contact Us
-          </Button>
-        </div>
+    <section className="w-full px-4 lg:px-13 lg:pb-[108px]">
+      <div className="w-full h-[1px] bg-black "></div>
+      <p className="uppercase font-bold text-xs pt-[2rem] pb-[1.75rem]">• W / 05</p>
+      <div className="flex items-center justify-between text-xl font-bold pb-6">
+        <h1 className="underline uppercase">FAQ</h1>
+        <h2>0.5</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6  ">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="p-6 border-2 border-zinc-600 rounded-[8px] shadow-md cursor-pointer"
+            className="p-6 border-2 border-zinc-600 rounded-[8px] cursor-pointer"
             onClick={() => toggleFAQ(index)}
           >
             <div className="flex justify-between items-center">

@@ -1,18 +1,29 @@
-"use client"
-import { ArrowRight } from "lucide-react"
-import Image from "next/image"
+import { ArrowRight } from "lucide-react";
+import SVGComponent from "../../../../public/svgviewer-react-output";
 
-export default function WhyusSection() {
+export default function StatsSection() {
   return (
-    <section className="w-full text-black">
-      <div className="grid grid-cols-1 md:grid-cols-3 border border-gray-300">
-        {/* Left column */}
-        <div className="p-8 md:p-10 border-b md:border-b-0 md:border-r border-gray-300 flex flex-col justify-between">
+    <section className="w-full lg:pb-[108px] pb-16 lg:px-13 px-4">
+      <div className="">
+        <div className="w-full h-[1px] bg-black "></div>
+        <p className="uppercase font-bold text-xs pt-[2rem] pb-[1.75rem]">
+          • W / 02
+        </p>
+        <div className="flex items-center justify-between text-xl font-bold pb-6">
+          <h1 className="underline">OUR WORK</h1>
+          <h2>0.2</h2>
+        </div>
+      </div>
+      <div className="flex flex-col md:flex-row">
+        {/* Left column - 30% width */}
+        <div className="w-full md:w-[30%] border border-gray-300 p-8 md:p-10 flex flex-col justify-between">
           <div className="space-y-6">
-            <div className="inline-block border border-gray-500 rounded-full px-4 py-1 text-sm">CLIENTS</div>
+            <div className="inline-block border border-gray-500 rounded-full px-4 py-1 text-sm">
+              CLIENTS
+            </div>
             <p className="text-lg">
-              Doconomy is a market-leading provider of innovative solutions that enable banks to accelerate the green
-              transition.
+              Doconomy is a market-leading provider of innovative solutions that
+              enable banks to accelerate the green transition.
             </p>
           </div>
           <div className="mt-10">
@@ -22,51 +33,62 @@ export default function WhyusSection() {
           </div>
         </div>
 
-        {/* Middle column */}
-        <div className="flex flex-col border-b md:border-b-0 md:border-r border-gray-300">
+        {/* Middle column - 45% width */}
+        <div className="w-full md:w-[45%] flex flex-col">
           {/* Users section */}
-          <div className="p-8 md:p-10 border-b border-gray-300">
+          <div className="border border-gray-300 p-8 md:p-10">
             <div className="mb-2 text-sm">NUMBER OF USERS*</div>
             <div className="text-7xl md:text-8xl font-medium">700M</div>
           </div>
 
           {/* Countries section */}
-          <div className="p-8 md:p-10 flex-grow">
+          <div className="border border-gray-300 p-8 md:p-10">
             <div className="mb-4 text-sm">COUNTRIES</div>
             <div className="relative h-[200px] md:h-[250px] w-full">
-              <Image
-                src="/placeholder.svg?height=250&width=400"
-                alt="World map with highlighted countries"
-                fill
-                className="object-contain"
-              />
+              <div className="absolute inset-0">
+                <SVGComponent />
+              </div>
             </div>
           </div>
 
           {/* Footer note */}
-          <div className="p-8 md:p-10 border-t border-gray-300">
+          <div className="border border-gray-300 p-8 md:p-10">
             <p className="mb-4">
-              For more detailed information about our markets and work, please get in touch with our team.
+              For more detailed information about our markets and work, please
             </p>
-            <p className="text-sm">* Potential user reach based on connected bank and financial institutions</p>
+            <p className="text-sm">
+              * Potential user reach based on connected bank and financial
+              institutions
+            </p>
           </div>
         </div>
 
-        {/* Right column */}
-        <div className="flex flex-col">
+        {/* Right column - 25% width */}
+        <div className="w-full md:w-[25%] flex flex-col">
           {/* Clients section */}
-          <div className="p-8 md:p-10 border-b border-gray-300">
+          <div className="border border-gray-300 p-8 md:p-10">
             <div className="mb-2 text-sm">NUMBER OF CLIENTS</div>
-            <div className="text-7xl md:text-8xl font-medium">100+</div>
+            <div className="text-7xl md:text-8xl lg:text-[8rem] font-medium">
+              100+
+            </div>
           </div>
 
           {/* Markets section */}
-          <div className="p-8 md:p-10 flex-grow">
+          <div className="border border-gray-300 p-8 md:p-10 flex-grow">
             <div className="mb-2 text-sm">NUMBER OF MARKETS</div>
-            <div className="text-7xl md:text-8xl font-medium">30+</div>
+            <div className="text-7xl md:text-8xl lg:text-[7rem] mb-2 font-medium">
+              30+
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+              fugiat quia, possimus assumenda voluptas ratione commodi
+              exercitationem repellendus aut nulla quo maxime inventore et
+              quaerat, unde blanditiis officiis commodi expedita. ipsum
+              dolor sit amet consectetur adipisicing elit.
+            </p>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

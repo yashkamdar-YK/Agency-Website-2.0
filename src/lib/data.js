@@ -31,7 +31,7 @@ export const projects = [
         name: "POWELL—STUDIO",
         client: "POWELL—STUDIO",
         description: "The online presence for Powell—Studio.",
-        src: "powell.jpg",
+        src: "sketch.webp",
         year: 2023,
     },
     {
@@ -45,7 +45,7 @@ export const projects = [
         name: "C2 Montreal",
         client: "Ingamana",
         description: "C2 Montréal is Canada's premier creative-business event.",
-        src: "c2.jpg",
+        src: "officestudio.png",
         year: 2021,
     },
     {
