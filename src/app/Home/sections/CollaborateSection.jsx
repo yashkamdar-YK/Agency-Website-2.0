@@ -1,11 +1,10 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import React from "react";
 
 export const CollaborateSection = () => {
   return (
     <div className="flex flex-col justify-center px-4 lg:px-13 pb-16 lg:pb-[108px]">
-      <h1 className="text-[8vw] font-medium text-[#091423]  leading-[0.9]">
+      <h1 className="text-[8vw] font-bold text-[#091423]  leading-[0.9]">
         let’s discuss your <br />
         <span className="inline-flex items-center gap-14">
           next

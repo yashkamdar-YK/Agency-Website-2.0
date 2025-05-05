@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import SVGComponent from "../../../../public/svgviewer-react-output";
 
-export default function StatsSection() {
+export default function WhyusSection() {
   return (
     <section className="w-full lg:pb-[108px] pb-16 lg:px-13 px-4">
       <div className="">

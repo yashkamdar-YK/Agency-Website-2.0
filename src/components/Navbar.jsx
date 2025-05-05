@@ -3,10 +3,11 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const navLinks = [
-  { name: "WORK", href: "#work" },
-  { name: "ABOUT", href: "#about" },
-  { name: "SERVICES", href: "#services" },
-  { name: "CONTACT", href: "#contact" },
+  { name: "HOME", href: "/" },
+  { name: "WORK", href: "work" },
+  { name: "ABOUT", href: "about" },
+  { name: "SERVICES", href: "services" },
+  { name: "CONTACT", href: "contact" },
 ];
 
 const Navbar = () => {
