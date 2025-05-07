@@ -4,7 +4,7 @@ import React from "react";
 
 export default function ServicesSection() {
   return (
-    <section className="w-full px-4 lg:px-13 pb-16 lg:pb-[108px] ">
+    <section className="w-full pb-16 lg:pb-[108px] ">
       <div className="w-full h-[1px] bg-black "></div>
       <p className="uppercase font-bold text-xs pt-[2rem] pb-[1.75rem]">• W / 01</p>
       <div className="flex items-center justify-between text-xl font-bold pb-6">
@@ -90,7 +90,7 @@ export default function ServicesSection() {
             </h3>
             <p className="text-base md:text-lg">
               Beautiful interfaces, user experience, and branding that sets your
-              product apart from the competition.
+              product apart from the.
             </p>
           </div>
         </div>

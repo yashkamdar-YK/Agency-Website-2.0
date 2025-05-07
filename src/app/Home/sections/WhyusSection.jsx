@@ -3,7 +3,7 @@ import SVGComponent from "../../../../public/svgviewer-react-output";
 
 export default function WhyusSection() {
   return (
-    <section className="w-full lg:pb-[108px] pb-16 lg:px-13 px-4">
+    <section className="w-full lg:pb-[108px] pb-16">
       <div className="">
         <div className="w-full h-[1px] bg-black "></div>
         <p className="uppercase font-bold text-xs pt-[2rem] pb-[1.75rem]">

@@ -2,30 +2,61 @@ import React from "react";
 
 const ContactHero = () => {
   return (
-    <section className="w-full px-4 lg:px-13 lg:pb-16">
-      <h1 className="lg:text-[8vw] text-[48px] leading-[52px] pt-12.5 lg:leading-[0.85] font-bold tracking-tight uppercase">
-        let’s work togther
-      </h1>
-
-      <div className="flex justify-between gap-10 lg:pt-8 lg:pb-16 pt-4 pb-8 ">
-        <div className="md:px-3 gap-5 flex flex-col">
-          <p className="lg:text-[32px] text-xl font-medium leading-tight text-black">
-            <span className="hidden lg:block">
-              Submit your project details below and we’ll get <br />
-              back to you.
+    <div className="pt-6 md:pt-11">
+      <div className="relative w-full">
+        <h2 className="text-[42px] font-bold md:text-[120px] uppercase leading-[42px] md:leading-[98px] overflow-hidden">
+          <span className="sr-only">let’s work togther</span>
+          <span aria-hidden="true">
+            <span className="inline-block overflow-hidden pb-[0.1em] -mb-[0.1em]">
+              <span className="inline-block" style={{transform: "translateY(calc(0% + 0em)) translateZ(0px);"}}>
+                let’s&nbsp;
+              </span>
             </span>
-            <span className="lg:hidden block">
-              {" "}
-              Submit your project details <br /> below and we’ll get
-              back to you.
+            <span className="inline-block overflow-hidden pb-[0.1em] -mb-[0.1em]">
+              <span className="inline-block" style={{transform: "translateY(calc(0% + 0em)) translateZ(0px);"}}>
+                work&nbsp;
+              </span>
+            </span>
+            <span className="inline-block overflow-hidden pb-[0.1em] -mb-[0.1em]">
+              <span className="inline-block" style={{transform: "translateY(calc(0% + 0em)) translateZ(0px);"}}>
+                togther&nbsp;
+              </span>
+            </span>
+          </span>
+        </h2>
+      </div>
+      <div className="flex justify-between pt-[16px] pb-[32px] md:pt-[32px] md:pb-[64px]">
+        <div className="relative w-full md:max-w-[50vw]">
+          <div className="relative w-full">
+            <div className="text-lg md:text-[32px] leading-[18px] md:leading-[34px] overflow-hidden max-w-none">
+              <div className="min-w-0 invisible h-0 overflow-x-scroll whitespace-nowrap">
+                back to you.
+              </div>
+            </div>
+          </div>
+          <p className="text-lg md:text-[32px] leading-[18px] md:leading-[34px] overflow-hidden">
+            <span className="sr-only">
+              Submit your project details below and we’ll get back to you.
+            </span>
+            <span aria-hidden="true">
+              <span className="inline-block overflow-hidden pb-[0.1em] -mb-[0.1em]">
+                <span className="inline-block" style={{transform: "translateY(calc(0% + 0em)) translateZ(0px);"}}>
+                  Submit your project details below and we’ll get
+                </span>
+              </span>
+              <span className="inline-block overflow-hidden pb-[0.1em] -mb-[0.1em]">
+                <span className="inline-block" style={{transform: "translateY(calc(0% + 0em)) translateZ(0px);"}}>
+                  back to you.
+                </span>
+              </span>
             </span>
           </p>
         </div>
-        <div className="text-sm font-bold text-right hidden lg:block ">
+        <p className="hidden md:block text-sm font-medium">
           (SCROLL)
-        </div>
+        </p>
       </div>
-    </section>
+    </div>
   );
 };
 

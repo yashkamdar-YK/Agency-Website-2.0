@@ -3,39 +3,95 @@ import React from "react";
 
 const AboutHero = () => {
   return (
-    <section className="w-full px-4 lg:px-13 pb-16">
-      <h1 className="lg:text-[8vw] text-[48px] leading-[52px] pt-12.5 lg:leading-[0.85] font-bold tracking-tight">
-        APEX LABS
-      </h1>
-
-      <div className="flex justify-between gap-10 lg:pt-8 lg:pb-16 pt-4 pb-8 ">
-        <div className="md:px-3 gap-5 flex flex-col">
-          <p className="lg:text-[32px] text-xl font-medium leading-tight text-black">
-            <span className="hidden lg:block">
-              Holistic boutique experiences that express the <br />
-              heart of your brand.
+    <div className="pt-6 md:pt-11">
+      <div className="relative w-full">
+        <h2 className="text-[42px] font-bold md:text-[120px] uppercase leading-[42px] md:leading-[98px] overflow-hidden">
+          <span className="sr-only">APEX LABS </span>
+          <span aria-hidden="true">
+            <span className="inline-block overflow-hidden pb-[0.1em] -mb-[0.1em]">
+              <span
+                className="inline-block"
+                style={{
+                  transform: "translateY(calc(0% + 0em)) translateZ(0px)",
+                }}
+              >
+                APEX&nbsp;
+              </span>
             </span>
-            <span className="lg:hidden block">
-              {" "}
-              Holistic boutique experiences  <br /> that express the
-              heart of <br /> your brand.
+            <span className="inline-block overflow-hidden pb-[0.1em] -mb-[0.1em]">
+              <span
+                className="inline-block"
+                style={{
+                  transform: "translateY(calc(0% + 0em)) translateZ(0px)",
+                }}
+              >
+                LABS&nbsp;
+              </span>
+            </span>
+            <span className="inline-block overflow-hidden pb-[0.1em] -mb-[0.1em]">
+              <span
+                className="inline-block"
+                style={{
+                  transform: "translateY(calc(0% + 0em)) translateZ(0px)",
+                }}
+              >
+                &nbsp;
+              </span>
+            </span>
+          </span>
+        </h2>
+      </div>
+      <div className="flex justify-between pt-[16px] pb-[32px] md:pt-[32px] md:pb-[64px]">
+        <div className="relative w-full md:max-w-[50vw]">
+          <div className="relative w-full">
+            <div className="text-lg md:text-[32px] leading-[18px] md:leading-[34px] overflow-hidden max-w-none">
+              <div className="min-w-0 invisible h-0 overflow-x-scroll whitespace-nowrap">
+                heart of your brand.
+              </div>
+            </div>
+          </div>
+          <p className="text-lg md:text-[32px] leading-[18px] md:leading-[34px] overflow-hidden">
+            <span className="sr-only">
+              Holistic boutique experiences that express the
+            </span>
+            <span aria-hidden="true">
+              <span className="inline-block overflow-hidden pb-[0.1em] -mb-[0.1em]">
+                <span
+                  className="inline-block"
+                  style={{
+                    transform: "translateY(calc(0% + 0em)) translateZ(0px)",
+                  }}
+                >
+                  Holistic boutique experiences that express the
+                </span>
+              </span>
+              <span className="inline-block overflow-hidden pb-[0.1em] -mb-[0.1em]">
+                <span
+                  className="inline-block"
+                  style={{
+                    transform: "translateY(calc(0% + 0em)) translateZ(0px)",
+                  }}
+                >
+                  heart of your brand.
+                </span>
+              </span>
             </span>
           </p>
         </div>
-        <div className="text-sm font-bold text-right hidden lg:block ">
-          (SCROLL)
-        </div>
+        <p className="hidden md:block text-sm font-medium">(SCROLL)</p>
       </div>
-
-      <div className="relative w-full lg:h-[90vh] h-[200px] ">
-        <Image
-          src="/nature.jpg"
-          alt="Web Development"
-          fill
-          className="object-cover rounded-[8px]"
-        />
-      </div>
-    </section>
+      <img
+        alt="Brand Focused "
+        fetchPriority="high"
+        width="1340"
+        height="751"
+        decoding="async"
+        data-nimg="1"
+        className="w-full pb-16 rounded-md"
+        src="https://images.ctfassets.net/cnse5yd3zml3/5xbogf0357cdKS34esjOp3/bbe3dd8b77de222f8677f1c06df77364/brand-centric-services-hero.svg"
+        style={{ color: "transparent" }}
+      />
+    </div>
   );
 };
 

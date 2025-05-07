@@ -53,7 +53,7 @@ export default function TestimonialSection() {
     testimonials.find((t) => t.id === activeTab) || testimonials[0];
 
   return (
-    <section className="w-full px-4 lg:px-13 pb-[108px]">
+    <section className="w-full pb-[108px]">
       <div className="">
         <div className="w-full h-[1px] bg-black "></div>
         <p className="uppercase font-bold text-xs pt-[2rem] pb-[1.75rem]">• W / 04</p>

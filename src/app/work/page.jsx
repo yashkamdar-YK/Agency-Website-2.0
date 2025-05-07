@@ -1,8 +1,13 @@
 import React from 'react'
+import Projects from './section/projects'
+import WorkHero from './section/WorkHero'
 
 const page = () => {
   return (
-    <div>page</div>
+    <main className='w-full px-[36px] md:px-[52px]'>
+      <WorkHero/>
+      <Projects/>
+    </main>
   )
 }
 

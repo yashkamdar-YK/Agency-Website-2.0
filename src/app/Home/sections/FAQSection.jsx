@@ -1,5 +1,5 @@
 "use client";
-
+import React from "react";
 import { useState } from "react";
 import { ChevronDown, ChevronUp, MessageSquare } from "lucide-react";
 
@@ -55,7 +55,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full px-4 lg:px-13 lg:pb-[108px]">
+    <section className="w-full lg:pb-[108px]">
       <div className="w-full h-[1px] bg-black "></div>
       <p className="uppercase font-bold text-xs pt-[2rem] pb-[1.75rem]">• W / 05</p>
       <div className="flex items-center justify-between text-xl font-bold pb-6">
@@ -67,7 +67,7 @@ export default function FAQSection() {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="p-6 border-2 border-zinc-600 rounded-[8px] cursor-pointer"
+            className="p-6 border-2 border-zinc-600 h-fit rounded-[8px] cursor-pointer"
             onClick={() => toggleFAQ(index)}
           >
             <div className="flex justify-between items-center">

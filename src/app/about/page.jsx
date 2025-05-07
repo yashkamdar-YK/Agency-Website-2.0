@@ -6,10 +6,10 @@ import ServiceCards from '@/components/ServiceCards'
 
 const page = () => {
   return (
-    <>
-    <AboutHero/>
-    <AboutUs/>
-    </>
+    <main className='w-full px-[36px] md:px-[52px]'>
+      <AboutHero />
+      <AboutUs />
+    </main>
   )
 }
 

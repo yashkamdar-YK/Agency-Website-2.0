@@ -3,9 +3,9 @@ import ContactHero from './section/ContactHero'
 
 const page = () => {
   return (
-    <>
-    <ContactHero/>
-    </>
+    <main className='w-full px-[36px] md:px-[52px]'>
+      <ContactHero />
+    </main>
   )
 }
 

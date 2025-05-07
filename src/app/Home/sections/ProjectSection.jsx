@@ -4,7 +4,7 @@ import Project from "@/components/project";
 
 export default function ProjectSection() {
   return (
-    <main className="mt-5vh color-black lg:pb-[108px] px-4 lg:px-13">
+    <main className="mt-5vh color-black lg:pb-[108px]">
       <div className="w-full h-[1px] bg-black "></div>
       <p className="uppercase font-bold text-xs pt-[2rem] pb-[1.75rem]">• W / 03</p>
       <div className="flex items-center justify-between text-xl font-bold">

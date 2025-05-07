@@ -9,7 +9,7 @@ import FAQSection from './sections/FAQSection'
 import { CollaborateSection } from './sections/CollaborateSection'
 const HomePage = () => {
   return (
-    <>
+    <main className='w-full px-[36px] md:px-[52px]'>
       <HeroSection />
       <ServicesSection />
       <WhyusSection />
@@ -17,7 +17,7 @@ const HomePage = () => {
       <TestimonialSection />
       <FAQSection />
       <CollaborateSection />
-    </>
+    </main>
   )
 }
 
