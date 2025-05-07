@@ -11,9 +11,9 @@ export default function ServicesSection() {
         <h1 className="underline">SERVICE</h1>
         <h2>0.1</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-3 gap-6">
         {/* Web Development Card */}
-        <div className="rounded-sm bg-[#b7b3a2] px-10 pt-10 pb-14 flex flex-col h-full gap-10">
+        <div className="rounded-sm bg-[#b7b3a2] px-10 pt-10 pb-14 flex flex-col lg:flex-col md:flex-row-reverse h-full gap-10">
           <div className="mb-8">
             <div className="w-40 h-40 relative">
               <Image
@@ -41,7 +41,7 @@ export default function ServicesSection() {
         </div>
 
         {/* App Development Card */}
-        <div className="rounded-sm bg-[#e5ff5d] px-10 pt-10 pb-14  flex flex-col h-full gap-10">
+        <div className="rounded-sm bg-[#e5ff5d] px-10 pt-10 pb-14  flex flex-col lg:flex-col md:flex-row-reverse h-full gap-10">
           <div className="mb-8">
             <div className="w-40 h-40 relative">
               <Image
@@ -68,7 +68,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Design Card */}
-        <div className="rounded-sm bg-[#f9f9f9] px-10 pt-10 pb-14  flex flex-col h-full gap-10">
+        <div className="rounded-sm bg-[#f9f9f9] px-10 pt-10 pb-14  flex flex-col lg:flex-col md:flex-row-reverse h-full gap-10">
           <div className="mb-8">
             <div className="w-40 h-40 relative">
               <Image

@@ -3,7 +3,17 @@ import React from "react";
 
 export const CollaborateSection = () => {
   return (
-    <div className="flex flex-col justify-center px-4 lg:px-13 pb-16 lg:pb-[108px]">
+    <div className="flex flex-col justify-center pb-16 lg:pb-[108px]">
+      <div className="">
+        <div className="w-full h-[1px] bg-black "></div>
+        <p className="uppercase font-bold text-xs pt-[2rem] pb-[1.75rem]">
+          • W / 02
+        </p>
+        <div className="flex items-center justify-between text-xl font-bold pb-6">
+          <h1 className="underline">Collab</h1>
+          <h2>0.2</h2>
+        </div>
+      </div>
       <h1 className="text-[8vw] font-bold text-[#091423]  leading-[0.9]">
         let’s discuss your <br />
         <span className="inline-flex items-center gap-14">
@@ -26,7 +36,7 @@ export const CollaborateSection = () => {
       </h1>
       <div className="flex flex-col gap-6 lg:gap-8 items-center mt-20">
         <h1 className="text-xl"> Big ambitions? <br />We match the energy.</h1>
-        
+
       </div>
     </div>
   );

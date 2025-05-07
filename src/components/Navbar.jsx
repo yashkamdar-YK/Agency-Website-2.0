@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const navLinks = [
+  { name: "Home", href: "/" },
   { name: "WORK", href: "work" },
   { name: "ABOUT", href: "about" },
   { name: "SERVICES", href: "services" },
@@ -82,7 +83,7 @@ const Navbar = () => {
               <a
                 key={index}
                 href={link.href}
-                className={`hover:text-gray-400 ${link.name === "WORK" ? "text-white" : "text-gray-500"
+                className={`hover:text-gray-400 ${link.name === "HOME" ? "text-white" : "text-gray-500"
                   }`}
                 onClick={() => setIsMenuOpen(false)} // Close menu on click
               >
