@@ -9,11 +9,11 @@ const AboutUs = () => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <h1 className="text-[32px] leading-[1.2] ">
+          <h1 className="text-[18px] lg:text-[32px] leading-[20px] lg:leading-[1.2] ">
           From a Cape Town-based startup to a global design powerhouse.
           </h1>
         </div>
-        <div className='text-[16px]'>
+        <div className='text-[15px] lg:text-[16px]'>
           <p className="pb-3">
           Urbanjava Studio is a dynamic design studio specializing in brand identity, social media, graphic design, and digital experiences. We build strong relationships with brands, helping them stand out in crowded markets. Our approach combines audacity and precision, where relentless creativity meets pinpoint focus.
           </p>

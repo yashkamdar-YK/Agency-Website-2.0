@@ -9,7 +9,7 @@ const ServiceCards = () => {
         • S / 02
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 justify-between">
+      <div className="grid grid-cols-1 gap-16 lg:gap-0 md:grid-cols-2 justify-between">
         <div className="flex flex-col justify-between">
           <div>
             <h1 className="text-[22px] font-bold">DESIGN</h1>
@@ -21,12 +21,12 @@ const ServiceCards = () => {
             </p>
             <Button>LEARN MORE</Button>
           </div>
-          <div className="text-sm pb-6">
+          <div className="text-sm pb-6 lg:block hidden">
             <h1 className="font-bold">SERVICE</h1>
             <h2>Research / Strategy / Design</h2>
           </div>
         </div>
-        <div className="flex justify-end h-[600px] w-auto">
+        <div className="flex justify-end lg:h-[600px] h-[400px] w-auto">
           <img src="/ujs_services_design.png" alt="" />
         </div>
       </div>

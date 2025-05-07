@@ -9,12 +9,12 @@ export const Approch = () => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <h1 className="text-[32px] leading-[1.2] ">
+          <h1 className="text-[18px] lg:text-[32px] leading-[20px] lg:leading-[1.2] ">
             At UJS©, we understand the pivotal role a <br /> strong brand plays in the
             success of any business venture.
           </h1>
         </div>
-        <div>
+        <div className="text-[15px] lg:text-[16px]">
           <p className="pb-3">
             That’s why we approach our services with a holistic mindset,
             recognizing that branding is the cornerstone upon which all other
