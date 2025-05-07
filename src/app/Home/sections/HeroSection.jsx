@@ -5,7 +5,7 @@ import React from "react";
 const HeroSection = () => {
   return (
     <section className="min-h-[calc(100dvh-68px] flex justify-between flex-col">
-      <div className="flex flex-col lg:justify-between lg:h-full pb-28">
+      <div className="flex flex-col lg:justify-between lg:h-full lg:pb-28">
         <div>
           <svg className="w-full h-auto pb-6 md:pb-12" viewBox="0 0 1354 263" width="1341" height="263">
             <text className="font-bold text-[238px]" x="0" y="258">APEX LABS</text>

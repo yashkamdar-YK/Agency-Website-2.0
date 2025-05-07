@@ -62,18 +62,17 @@ export default function TestimonialSection() {
           <h2>0.4</h2>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-26">
         {/* Left column - Company logos */}
-        <div className="flex flex-col">
+        <div className="flex flex-col md:justify-center ;">
           {testimonials.map((testimonial, index) => (
-            <div key={testimonial.id}>
+            <div key={testimonial.id} className="md:w-fit lg:w-full">
               <button
                 onClick={() => setActiveTab(testimonial.id)}
-                className={`w-full text-left py-6 flex items-center transition-opacity duration-300 ${
-                  activeTab === testimonial.id
+                className={`w-full cursor-pointer text-left py-6 flex items-center transition-opacity duration-300 ${activeTab === testimonial.id
                     ? "opacity-100"
                     : "opacity-40 hover:opacity-70"
-                }`}
+                  }`}
               >
                 <div className="w-full">
                   <Image
@@ -85,9 +84,11 @@ export default function TestimonialSection() {
                   />
                 </div>
               </button>
-              {index < testimonials.length - 1 && (
+
+              <div className="border-t border-gray-800 w-full"></div>
+              {/* {index < testimonials.length - 1 && (
                 <div className="border-t border-gray-800 w-full"></div>
-              )}
+              )} */}
             </div>
           ))}
         </div>
