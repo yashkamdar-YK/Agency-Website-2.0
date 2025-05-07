@@ -18,6 +18,7 @@ export default function Index({ projects, reversed }) {
       requestAnimationFrameId = window.requestAnimationFrame(animate);
     }
   };
+  
 
   const animate = () => {
     //Add easing to the animation
@@ -42,13 +43,20 @@ export default function Index({ projects, reversed }) {
   return (
     <div
       onMouseMove={manageMouseMove}
-      className="flex mt-[10vh] h-[45vw] gap-8"
+      className="md:flex mt-[10vh] gap-8"
     >
       <div
         ref={firstImage}
         className="relative"
         style={{
-          width: reversed ? "33.33%" : "66.66%",
+          width:
+            window.innerWidth < 768
+              ? "100%"
+              : window.innerWidth >= 768 && window.innerWidth < 1024
+                ? "50%"
+                : reversed
+                  ? "33.33%"
+                  : "66.66%",
         }}
       >
         <div className="relative pb-[66%]">
@@ -74,7 +82,14 @@ export default function Index({ projects, reversed }) {
         ref={secondImage}
         className="relative"
         style={{
-          width: reversed ? "66.66%" : "33.33%",
+          width:
+            window.innerWidth < 768
+              ? "100%"
+              : window.innerWidth >= 768 && window.innerWidth < 1024
+                ? "50%"
+                : reversed
+                  ? "66.66%"
+                  : "33.33%",
         }}
       >
         <div className="relative pb-[66%]">
@@ -95,6 +110,6 @@ export default function Index({ projects, reversed }) {
           <p className="text-[1em] mt-0 text-[#656565]">{projects[1].year}</p>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
