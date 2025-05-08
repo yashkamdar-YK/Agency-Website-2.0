@@ -1,115 +1,177 @@
-"use client";
-
-import { ArrowUp, ArrowRight, Heart, Play } from "lucide-react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import Link from "next/link"
+import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
+import { Twitter, Github, Youtube, Linkedin, Slack } from "lucide-react"
 
 export default function Footer() {
-
   return (
-    <footer className=" border-t-1 border-black py-12 px-6 md:px-12 lg:px-14 relative">
-      {/* Top Bar */}
-      <div className="flex justify-between items-center mb-24">
-        <div className="font-bold text-2xl tracking-tight">APEXLABS</div>
-        <div className="flex gap-4">
-          <Button
-            data-cal-namespace="15min"
-            data-cal-link="ankit0panchal/15min"
-            data-cal-config='{"layout":"month_view"}'
-            className={"cursor-pointer"}
-          >
-            LETS TALK
-          </Button>
-          {/* <Button  variant="outline">
-            <Play size={18} /> MENU
-          </Button> */}
+    <footer className=" py-12  px-[36px] md:px-[52px]">
+      <div >
+        <div className="h-[1px] w-full overflow-hidden relative">
+          <div
+            className="h-[1px] bg-black w-full absolute"
+            style={{ transform: "translateX(0%) translateZ(0px);" }}
+          ></div>
         </div>
-      </div>
+        {/* Logo */}
+        <div className="mb-12 mt-4 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-2">
+            <img src="/apexlabs.png" alt="Logo" className="h-12" />
+          </Link>
 
-      {/* Main Footer Content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-24">
-        {/* Address Column */}
-        <div className="lg:col-span-3">
-          <h1 className="text-lg leading-5.5">
-            Suite 2 <br /> Kalane Nagar <br /> Indore, 452002 <br /> M.P India
-          </h1>
-        </div>
-
-        {/* Links Column */}
-        <div className="space-y-8 lg:col-span-4">
-          {/* <div>
-            <Link href="#" className="text-sm block hover:underline">
-              <h1 className="text-xl">Twitter/ X</h1>
-            </Link>
-            <Link href="#" className="text-sm block hover:underline">
-              <h1 className="text-xl">Instagram</h1>
-            </Link>
-            <Link href="#" className="text-sm block hover:underline">
-              <h1 className="text-xl">Linkedin</h1>
-            </Link>
-          </div> */}
-
-          <div>
-            <h1 className="text-lg">General enquiries</h1>
+          <div className="flex flex-wrap gap-2 mb-8">
             <Link
-              href="mailto:hello@moonlab.co"
-              className="text-sm hover:underline"
+              href="#"
+              className="w-10 h-10 flex items-center justify-center bg-[#000000] text-white rounded-[8px]"
             >
-              <h1 className="text-xl">hello@apexlabs.in</h1>
+              <Twitter className="w-5 h-5" />
+              <span className="sr-only">Twitter</span>
             </Link>
-          </div>
-
-          <div>
-            <h1 className="text-lg">For Business</h1>
             <Link
-              href="mailto:hello@moonlab.co"
-              className="text-sm hover:underline"
+              href="#"
+              className="w-10 h-10 flex items-center justify-center bg-[#000000] text-white rounded-[8px]"
             >
-              <h1 className="text-xl">hello@apexlabs.in</h1>
+              <Github className="w-5 h-5" />
+              <span className="sr-only">GitHub</span>
+            </Link>
+            <Link
+              href="#"
+              className="w-10 h-10 flex items-center justify-center bg-[#000000] text-white rounded-[8px]"
+            >
+              <Youtube className="w-5 h-5" />
+              <span className="sr-only">YouTube</span>
+            </Link>
+            <Link
+              href="#"
+              className="w-10 h-10 flex items-center justify-center bg-[#000000] text-white rounded-[8px]"
+            >
+              <Linkedin className="w-5 h-5" />
+              <span className="sr-only">LinkedIn</span>
+            </Link>
+            <Link
+              href="#"
+              className="w-10 h-10 flex items-center justify-center bg-[#000000] text-white rounded-[8px]"
+            >
+              <Slack className="w-5 h-5" />
+              <span className="sr-only">Slack</span>
             </Link>
           </div>
         </div>
 
-        {/* Newsletter Column */}
-        <div className="lg:col-span-5">
-          <h1 className="lg:text-5xl text-4xl font-medium mb-6">
-            Subscribe to
-            <br />
-            our newsletter
-          </h1>
-          <div className="relative">
-            <input
-              type="email"
-              placeholder="Your email"
-              className="w-full border-2 border-black rounded-lg py-3 px-5 pr-12 text-lg focus:outline-none"
-            />
-            <button className="absolute right-4 top-1/2 transform -translate-y-1/2">
-              <ArrowRight size={25} />
-            </button>
+        {/* Main footer content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Products column */}
+          <div>
+            <h3 className="text-lg font-medium mb-4">Address</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="#" className="hover:text-[#e9e356] transition-colors">
+                  Suite 2 <br />
+                  Kalane Nagar
+                  Indore, <br />
+                  452002 M.P India
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Learn column */}
+          <div>
+            <div className="space-y-8 lg:col-span-4">
+              <div>
+                <h1 className="text-lg">General enquiries</h1>
+                <Link
+                  href="mailto:hello@moonlab.co"
+                  className="text-sm hover:underline"
+                >
+                  <h1 className="text-xl">hello@apexlabs.in</h1>
+                </Link>
+              </div>
+
+              <div>
+                <h1 className="text-lg">For Business</h1>
+                <Link
+                  href="mailto:hello@moonlab.co"
+                  className="text-sm hover:underline"
+                >
+                  <h1 className="text-xl">hello@apexlabs.in</h1>
+                </Link>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Company column */}
+          <div>
+            <h3 className="text-lg font-medium mb-4">Company</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="#" className="hover:text-[#e9e356] transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-[#e9e356] transition-colors">
+                  Work
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-[#e9e356] transition-colors">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-[#e9e356] transition-colors">
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Newsletter and social */}
+          <div>
+
+
+            <h3 className="text-lg font-medium mb-4">Subscribe to the Timescale Newsletter</h3>
+            <div className="flex flex-col sm:flex-row gap-2 mb-4">
+              <Input
+                type="email"
+                placeholder="Your email"
+                className="bg-transparent border-white/20 text-white rounded-[8px]"
+              />
+              <Button className="bg-white text-black hover:bg-[#e9e356] rounded-[8px]">Subscribe</Button>
+            </div>
+            <p className="text-sm text-gray-400">
+              By submitting, you acknowledge Timescale's{" "}
+              <Link href="#" className="underline hover:text-[#e9e356]">
+                Privacy Policy
+              </Link>
+            </p>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="border-t border-black my-8"></div>
+
+        {/* Bottom footer */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="text-sm text-gray-400">2025 © Apexlabs Inc. All rights reserved.</div>
+          <div className="flex flex-wrap gap-6 text-sm">
+            <Link href="#" className="text-gray-400 hover:text-white">
+              Privacy preferences
+            </Link>
+            <Link href="#" className="text-gray-400 hover:text-white">
+              Legal
+            </Link>
+            <Link href="#" className="text-gray-400 hover:text-white">
+              Privacy
+            </Link>
+            <Link href="#" className="text-gray-400 hover:text-white">
+              Sitemap
+            </Link>
           </div>
         </div>
       </div>
-
-      {/* Bottom Bar */}
-      <div className="flex flex-col md:flex-row justify-between items-center text-[16px]">
-        <div>@2025 Apexlabs</div>
-        <div className="flex items-center mt-4 md:mt-0">
-          Build by Apexlabes with{" "}
-          <Heart size={14} className="mx-1 fill-black" />
-        </div>
-      </div>
-
-      {/* Back to Top Button */}
-      {/* <Link
-        href="#top"
-        className="absolute bottom-12 right-6 md:right-12 bg-black text-white rounded-full p-3 hover:bg-gray-800 transition-colors"
-        onClick={(e) => {
-          e.preventDefault()
-          window.scrollTo({ top: 0, behavior: "smooth" })
-        }}
-      >
-        <ArrowUp size={20} />
-      </Link> */}
     </footer>
-  );
+  )
 }
