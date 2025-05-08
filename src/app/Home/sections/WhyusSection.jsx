@@ -14,9 +14,9 @@ export default function WhyusSection() {
           <h2>0.2</h2>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-col lg:flex-row">
         {/* Left column - 30% width */}
-        <div className="w-full md:w-[30%] border border-gray-300 p-8 md:p-10 flex flex-col justify-between">
+        <div className="w-full lg:w-[30%]  border border-gray-300 p-8 md:p-10 flex flex-col justify-between">
           <div className="space-y-6">
             <div className="inline-block border border-gray-500 rounded-full px-4 py-1 text-sm">
               CLIENTS
@@ -34,11 +34,11 @@ export default function WhyusSection() {
         </div>
 
         {/* Middle column - 45% width */}
-        <div className="w-full md:w-[45%] flex flex-col">
+        <div className="w-full lg:w-[45%] md:w-[100%]  flex flex-col">
           {/* Users section */}
           <div className="border border-gray-300 p-8 md:p-10">
             <div className="mb-2 text-sm">NUMBER OF USERS*</div>
-            <div className="text-7xl md:text-8xl font-medium">700M</div>
+            <div className="text-7xl md:text-7xl font-medium">700M</div>
           </div>
 
           {/* Countries section */}
@@ -64,11 +64,11 @@ export default function WhyusSection() {
         </div>
 
         {/* Right column - 25% width */}
-        <div className="w-full md:w-[25%] flex flex-col">
+        <div className="w-full md:w-[100%] lg:w-[25%] md:flex-row flex lg:flex-col flex-col">
           {/* Clients section */}
           <div className="border border-gray-300 p-8 md:p-10">
             <div className="mb-2 text-sm">NUMBER OF CLIENTS</div>
-            <div className="text-7xl md:text-8xl lg:text-[8rem] font-medium">
+            <div className="text-7xl md:text-5xl lg:text-[8rem] font-medium">
               100+
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function WhyusSection() {
           {/* Markets section */}
           <div className="border border-gray-300 p-8 md:p-10 flex-grow">
             <div className="mb-2 text-sm">NUMBER OF MARKETS</div>
-            <div className="text-7xl md:text-8xl lg:text-[7rem] mb-2 font-medium">
+            <div className="text-7xl md:text-5xl lg:text-[7rem] mb-2 font-medium">
               30+
             </div>
             <p>
