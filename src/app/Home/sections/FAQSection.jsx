@@ -21,7 +21,7 @@ export default function FAQSection() {
       question: "How can I benefit from Pixel Bloom's services?",
       answer:
         "Our AI models help you enhance your business operations, automate repetitive tasks, and provide valuable data-driven insights.",
-      isOpen: true,
+      isOpen: false,
     },
     {
       question: "How do I get started with Pixel Bloom?",
@@ -63,7 +63,7 @@ export default function FAQSection() {
         <h2>0.5</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6  ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6  ">
         {faqs.map((faq, index) => (
           <div
             key={index}

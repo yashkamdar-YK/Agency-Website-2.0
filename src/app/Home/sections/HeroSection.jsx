@@ -1,11 +1,12 @@
 "use client";
+import AnimeButton from "@/components/AnimeButton";
 import { Button } from "@/components/ui/button";
 import React from "react";
 
 const HeroSection = () => {
   return (
     <section className="min-h-[calc(100dvh-68px] flex justify-between flex-col">
-      <div className="flex flex-col lg:justify-between lg:h-full pb-28">
+      <div className="flex flex-col lg:justify-between lg:h-full lg:pb-28">
         <div>
           <svg className="w-full h-auto pb-6 md:pb-12" viewBox="0 0 1354 263" width="1341" height="263">
             <text className="font-bold text-[238px]" x="0" y="258">APEX LABS</text>
@@ -33,6 +34,7 @@ const HeroSection = () => {
         </div>
         <div className="flex justify-between pb-8 lg:pb-32">
           <a className="uppercase text-sm border-b-black border-b-[1px] font-medium" href="/about">Learn more about us</a>
+          <AnimeButton />
           <p className="hidden lg:block text-sm font-medium">(SCROLL)</p>
         </div>
       </div>

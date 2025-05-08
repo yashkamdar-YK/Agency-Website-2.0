@@ -1,13 +1,13 @@
 "use client";
-import { projects } from "@/lib/data";
-import Project from "@/components/project";
+
+import ProjectCards from "@/components/ProjectCards";
 
 export default function ProjectSection() {
   return (
-    <main className="mt-5vh color-black lg:pb-[108px]">
+    <main className="mt-5vh color-black lg:pb-[40px]">
       <div className="w-full h-[1px] bg-black "></div>
       <p className="uppercase font-bold text-xs pt-[2rem] pb-[1.75rem]">• W / 03</p>
-      <div className="flex items-center justify-between text-xl font-bold">
+      <div className="flex items-center justify-between text-xl pb-6  font-bold">
         <h1 className="underline">OUR WORK</h1>
         <h2>0.3</h2>
       </div>
@@ -15,11 +15,11 @@ export default function ProjectSection() {
         We use design and technology to create brands and products that perform,
         delight, and scale.
       </h1> */}
-      <div>
-        <Project projects={[projects[0], projects[1]]} />
-        <Project projects={[projects[2], projects[3]]} reversed={true} />
-        <Project projects={[projects[4], projects[5]]} />
-        <Project projects={[projects[6], projects[7]]} reversed={true} />
+       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 " >
+        <ProjectCards />
+        <ProjectCards />
+        <ProjectCards />
+        <ProjectCards />
       </div>
     </main>
   );
