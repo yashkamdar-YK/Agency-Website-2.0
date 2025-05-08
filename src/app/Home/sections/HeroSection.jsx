@@ -1,4 +1,5 @@
 "use client";
+import AnimeButton from "@/components/AnimeButton";
 import { Button } from "@/components/ui/button";
 import React from "react";
 
@@ -33,6 +34,7 @@ const HeroSection = () => {
         </div>
         <div className="flex justify-between pb-8 lg:pb-32">
           <a className="uppercase text-sm border-b-black border-b-[1px] font-medium" href="/about">Learn more about us</a>
+          <AnimeButton />
           <p className="hidden lg:block text-sm font-medium">(SCROLL)</p>
         </div>
       </div>
