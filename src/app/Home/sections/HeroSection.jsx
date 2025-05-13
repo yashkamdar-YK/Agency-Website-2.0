@@ -1,12 +1,12 @@
 "use client";
-import AnimeButton from "@/components/AnimeButton";
+import AnimeButton from "@/components/CustomButton";
 import { Button } from "@/components/ui/button";
 import React from "react";
 
 const HeroSection = () => {
   return (
     <section className="min-h-[calc(100dvh-68px] flex justify-between flex-col">
-      <div className="flex flex-col lg:justify-between lg:h-full lg:pb-28">
+      <div className="flex flex-col lg:justify-between lg:h-full">
         <div>
           <svg className="w-full h-auto pb-6 md:pb-12" viewBox="0 0 1354 263" width="1341" height="263">
             <text className="font-bold text-[238px]" x="0" y="258">APEX LABS</text>
@@ -40,16 +40,15 @@ const HeroSection = () => {
       </div>
       <div className="pb-[60px] flex flex-col gap-4 lg:gap-3 lg:flex-col-reverse lg:absolute xl:right-44 lg:right-28 lg:top-70">
         <div className="flex justify-between">
-          <h3 className="leading-[20px]">Urbanjava Studio <br />Showreel (22-24)
+          <h3 className="leading-[20px]">Apex Labs <br />Showreel (22-24)
           </h3>
           <img alt="arrow" loading="lazy" width="11" height="11" decoding="async" data-nimg="1" className="md:hidden" style={{ color: "transparent", src: "/images/hero/arrow.svg" }} />
         </div>
         <div className="rounded-[6px] w-full md:w-[361px] overflow-hidden">
-          <video playsInline={true} autoPlay={true} muted={false} className="">
-            <source src="/videos/montage.mp4" />
-          </video>
+          <video src="/videos/montage.mp4"/>
         </div>
       </div>
+
     </section>
 
   );

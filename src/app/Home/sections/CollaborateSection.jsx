@@ -1,4 +1,5 @@
 "use client";
+import CustomButton from "@/components/CustomButton";
 import React from "react";
 
 export const CollaborateSection = () => {
@@ -36,7 +37,7 @@ export const CollaborateSection = () => {
       </h1>
       <div className="flex flex-col gap-6 lg:gap-8 items-center mt-20">
         <h1 className="text-xl"> Big ambitions? <br />We match the energy.</h1>
-
+        <CustomButton/>
       </div>
     </div>
   );
