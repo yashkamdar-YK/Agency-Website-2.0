@@ -60,22 +60,25 @@ export default function Footer() {
 
         {/* Main footer content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Products column */}
+          {/* Address column */}
           <div>
-            <h3 className="text-lg font-medium mb-4">Address</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="#" className="hover:text-[#e9e356] transition-colors">
-                  Suite 2 <br />
-                  Kalane Nagar
-                  Indore, <br />
-                  452002 M.P India
+            <div className="space-y-8 lg:col-span-4">
+              <div>
+                <h1 className="text-lg">Address</h1>
+                <Link
+                  href="mailto:hello@moonlab.co"
+                  className="text-sm hover:underline"
+                >
+                  <h1 className="text-[18px]">Suite 2 <br />
+                    Kalane Nagar
+                    Indore, <br />
+                    452002 M.P India</h1>
                 </Link>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
 
-          {/* Learn column */}
+          {/* Email column */}
           <div>
             <div className="space-y-8 lg:col-span-4">
               <div>
@@ -155,18 +158,18 @@ export default function Footer() {
 
         {/* Bottom footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-sm text-gray-400">2025 © Apexlabs Inc. All rights reserved.</div>
+          <div className="text-sm text-gray-500">2025 © Apexlabs Inc. All rights reserved.</div>
           <div className="flex flex-wrap gap-6 text-sm">
-            <Link href="#" className="text-gray-400 hover:text-white">
+            <Link href="#" className="text-gray-400 hover:text-black">
               Privacy preferences
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-white">
+            <Link href="#" className="text-gray-400 hover:text-black">
               Legal
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-white">
+            <Link href="#" className="text-gray-400 hover:text-black">
               Privacy
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-white">
+            <Link href="#" className="text-gray-400 hover:text-black">
               Sitemap
             </Link>
           </div>
