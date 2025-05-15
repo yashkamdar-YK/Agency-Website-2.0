@@ -45,8 +45,17 @@ const HeroSection = () => {
           <img alt="arrow" loading="lazy" width="11" height="11" decoding="async" data-nimg="1" className="md:hidden" style={{ color: "transparent", src: "/images/hero/arrow.svg" }} />
         </div>
         <div className="rounded-[6px] w-full md:w-[361px] overflow-hidden">
-          <video src="/videos/montage.mp4"/>
+          <video
+            src="/videos/montage.mp4"
+            autoPlay
+            muted
+            loop
+            className="w-full h-auto"
+          >
+            Your browser does not support the video tag.
+          </video>
         </div>
+
       </div>
 
     </section>
