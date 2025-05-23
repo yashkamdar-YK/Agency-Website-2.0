@@ -84,11 +84,11 @@ const AboutHero = () => {
         alt="Brand Focused "
         fetchPriority="high"
         width="1340"
-        height="751"
+        height="200"
         decoding="async"
         data-nimg="1"
         className="w-full pb-16 rounded-md"
-        src="https://images.ctfassets.net/cnse5yd3zml3/5xbogf0357cdKS34esjOp3/bbe3dd8b77de222f8677f1c06df77364/brand-centric-services-hero.svg"
+        src="/nature.jpg"
         style={{ color: "transparent" }}
       />
     </div>
